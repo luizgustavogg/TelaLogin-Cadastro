@@ -22,7 +22,9 @@ body {
   padding: 70px;
 }
 
+
 .cadastro{
+
   padding: 100px;
 }
 .input {
@@ -71,7 +73,8 @@ body {
   display: none;
 }
 
-#submit{
+.button input{
+  width: 100%;
   cursor: pointer;
   margin-top: 20px;
   background-color: rgba(165, 42, 42, 0.928);
@@ -79,11 +82,11 @@ body {
   transition: all 0.2s ease;
 }
 
-#submit:hover{
+.button input:hover{
   background-color: rgba(165, 42, 42, 0.733);
 }
 
-#submit:focus{
+.button input:focus{
   transform: translateY(0%);
 }
 
