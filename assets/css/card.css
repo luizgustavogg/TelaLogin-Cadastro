@@ -1,3 +1,7 @@
+html{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
   background-image: url(../../img/background.jpg);
   background-repeat: no-repeat;
@@ -13,11 +17,14 @@ body {
 }
 
 .wrapper {
-  max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.336);
-  padding: 100px;
+  max-width: 1000px;
+  background-color: rgba(22, 22, 22, 0.905);
+  padding: 70px;
 }
 
+.cadastro{
+  padding: 100px;
+}
 .input {
   display: flex;
   flex-direction: column;
@@ -36,11 +43,83 @@ body {
 }
 
 .input label {
-  color: rgb(190, 190, 190);
+  color: #fff; 
   font-size: 1.09em;
 }
 
 .input input {
+  color: #fff;
+  background-color: rgba(254, 254, 254, 0.138);
+  border-radius: 6px;
   border: none;
   padding: 10px;
+  transition: all 0.3s ease;
+
+}
+
+.input input:focus{
+  transform: translateY(-20%);
+}
+
+.errortxt{
+  background-color: rgb(255, 156, 156);
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid rgb(184, 99, 99);
+  color: rgb(169, 58, 58);
+  display: none;
+}
+
+#submit{
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: rgba(165, 42, 42, 0.928);
+
+  transition: all 0.2s ease;
+}
+
+#submit:hover{
+  background-color: rgba(165, 42, 42, 0.733);
+}
+
+#submit:focus{
+  transform: translateY(0%);
+}
+
+.input p{
+  color: #fff;
+}
+.input a{
+  text-decoration: none;
+  color: rgba(165, 42, 42, 0.733);
+}
+
+/* Qr code*/
+@media(max-width: 767px){
+  .divisao{
+    display: flex;
+    flex-direction: column;
+
+    gap: 100px;
+  }
+}
+@media(min-width: 900px){
+  .divisao{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 200px;
+}}
+.qrcode{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qrcode img{
+  width: 200px;
+}
+
+.qr strong{
+  font-size: 1.69em;
 }
