@@ -1,0 +1,46 @@
+body {
+  background-image: url(../../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.336);
+  padding: 100px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title strong {
+  text-align: center;
+  color: #fff;
+  font-size: 1.99em;
+}
+
+.title p {
+  color: rgb(190, 190, 190);
+  font-size: 1.29em;
+}
+
+.input label {
+  color: rgb(190, 190, 190);
+  font-size: 1.09em;
+}
+
+.input input {
+  border: none;
+  padding: 10px;
+}
