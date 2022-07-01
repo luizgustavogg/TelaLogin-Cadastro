@@ -11,7 +11,7 @@ if (empty($email) || empty($senha) || empty($nome)) { // validar se eo campo ta 
     echo "Preencher todos os campos";
 } else {
     if (!preg_match("/^[a-zA-Z-' ]*$/", $nome)) { //  validar o nome (so tendo letras e Espaço)
-        echo "Apenas letras e espaço";
+        echo "So pode apenas letras e espaço no nome";
     } else {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) { // Validar a extensão o email
             $sql01 = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");

@@ -30,7 +30,7 @@ if(isset($_SESSION['logado'])){
           </div>
           <div class="login">
             <form action="" method="">
-              <div class="errortxt">pega</div>
+              <div class="errortxt"></div>
               <div class="input">
                 <label>Email:</label>
                 <input type="text" name="email">

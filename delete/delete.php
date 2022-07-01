@@ -1,7 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['logado'])){
-  header("location:../index.php");
+if(!isset($_SESSION['logado'])){
+  header("location:../login/login.php");
 }
 
 ?>
@@ -25,15 +25,13 @@ if(isset($_SESSION['logado'])){
 
         <div class="content">
           <div class="title">
-            <strong>Boas Vindas</strong>
-            <p>Faça sua Conta para começar..</p>
+            <strong>Deletar conta</strong>
+            <p>Depois de confirmar não tem mais volta...</p>
           </div>
           <div class="cadastro">
             <form action="" method="">
               <div class="errortxt"></div>
               <div class="input">
-                <label>Nome:</label>
-                <input type="text" name="nome">
 
                 <label>Email:</label>
                 <input type="text" name="email">
@@ -43,7 +41,6 @@ if(isset($_SESSION['logado'])){
                 <div class="button">
                   <input type="submit" value="enviar" id="submit">
                 </div>
-                <p>Eu ja tenho uma conta <a href="../login/login.php">Fazer login</a></p>
               </div>
             </form>
           </div>
@@ -51,7 +48,7 @@ if(isset($_SESSION['logado'])){
 
       </div>
     </div>
-    <script src="../assets/script/cadastro.js"></script>
+    <script src="../assets/script/remove.js"></script>
 </body>
 
 </html>

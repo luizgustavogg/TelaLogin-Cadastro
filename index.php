@@ -39,7 +39,7 @@
                 <p>**********</p>
 
                 <a href="logout.php">Deslogar da Conta</a>
-                <a href="#">Excluir a Conta</a>
+                <a href="delete/delete.php">Excluir a Conta</a>
             </div>
         </div>
     </div>
