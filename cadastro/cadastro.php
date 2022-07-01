@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="card">
+  <div class="card cadastroc">
 
     <div class="wrapper cadastro">
       <div class="divisao">

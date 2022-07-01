@@ -15,7 +15,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.cadastroc{
+  margin-top: 100px;
+}
 .wrapper {
   max-width: 1000px;
   background-color: rgba(22, 22, 22, 0.905);
@@ -24,8 +26,7 @@ body {
 
 
 .cadastro{
-
-  padding: 100px;
+  padding: 50px;
 }
 .input {
   display: flex;
