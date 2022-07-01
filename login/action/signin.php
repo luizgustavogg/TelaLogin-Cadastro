@@ -6,7 +6,7 @@ $email = mysqli_real_escape_string($conn, $_POST['email']);
 $senha = mysqli_real_escape_string($conn, md5($_POST['senha']));
 
 $sql01 = mysqli_query($conn, "SELECT * FROM users WHERE email  = '$email'");
-if (!empty($email) && !empty($senha)) { // Ver se o campo ta vaio
+if (!empty($email) && !empty($senha)) { // Ver se o campo ta vazio
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) { // Validar a extensão o email
         if (mysqli_num_rows($sql01) == 0) { // Verificar se tem alguma conta com este email
             echo "Conta não existe";
@@ -18,6 +18,8 @@ if (!empty($email) && !empty($senha)) { // Ver se o campo ta vaio
             }
             if (mysqli_num_rows($sql02) == 1) { // Deu tudo certo
                 $_SESSION['logado'] = true;
+                $row = mysqli_fetch_assoc($sql02);
+                $_SESSION['unique_id'] = $row['unique_id'];
                 echo "sucesso";
             }
         }

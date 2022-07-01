@@ -22,7 +22,7 @@ continueBtn.onclick = () => {
         let data = xhr.response;
         console.log(data);
         if (data == "sucesso") {
-          location.href = '../../index.php';
+          location.href = '../index.php';
         } else {
           errorText.textContent = data;
           errorText.style.display = "block";

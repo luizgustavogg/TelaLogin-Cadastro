@@ -1,0 +1,18 @@
+.conta{
+display: flex;
+flex-direction: column;
+}
+.conta label{
+    color:#fff; 
+    font-size: 1.09em;
+}
+
+.conta p{
+    color: rgb(190, 190, 190);
+    font-size: 1.2em;
+}
+
+.conta a{
+    color: brown;
+    text-decoration: none;
+}
